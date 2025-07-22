@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta tags for SEO and preview -->
+<meta name="description" content="Get the best deals for social media growth: Instagram, YouTube, TikTok, Telegram, and more. Trusted services by Mohit Bhai — demo available!" />
+<meta name="keywords" content="social media panel, Instagram followers, YouTube watch time, Telegram promotion, TikTok growth, Mohit Bhai services" />
+<meta name="author" content="@Mohitbehelgaming" />
+
+<!-- Open Graph for social media previews -->
+<meta property="og:title" content="Boost Your Social Presence | Mohit Bhai Panel" />
+<meta property="og:description" content="Affordable and real services for Instagram, YouTube, TikTok, WhatsApp, LinkedIn & more. Telegram demo starting at ₹25. Bulk discounts available!" />
+<meta property="og:image" content="solog.png" /> <!-- Replace with your banner image URL -->
+<meta property="og:url" content="https://jarvis123563.github.io/Social.com/" />
+<meta property="og:type" content="website" />
+  
+  <title>Mohit Bhai Panel</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: rgb(230,241,255);
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(130deg, #4b6cb7, #182848);
+      color: white;
+      padding: 10px 0;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1000px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-slide {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .header-slide.active {
+      opacity: 1;
+    }
+    .header-slide.left {
+      transform: translate(-150%, -50%);
+    }
+    .header-slide.right {
+      transform: translate(150%, -50%);
+    }
+    .header-slide img {
+      max-height: 250px;
+      width: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-bottom: 13px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 26px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      margin-bottom: 4px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .contact a {
+      display: inline-block;
+      background: #4b6cb7;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .contact a:hover {
+      background: #3a56a2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #182848;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('solog1.jpg') no-repeat center center / cover; opacity: 0.18; z-index: 0; pointer-events: none;"></div>
+    <div class="header-container" id="headerSlider">
+      <div class="header-slide active">
+        <h2>Welcome to Mohit Bhai Panel</h2>
+        <p>Your destination for affordable, high-quality social media services across all major platforms. We help you grow faster, reach further, and make an impact online.</p>
+      </div>
+      <div class="header-slide">
+        <img src="solog.png" alt="Instagram">
+      </div>
+      <div class="header-slide">
+        <img src="solog1.jpg" alt="YouTube">
+      </div>
+      <div class="header-slide">
+        <img src="socio.jpg" alt="TikTok">
+      </div>
+    </div>
+  </header>
+  <!-- Hamburger icon -->
+<div onclick="toggleMenu()" style="position: fixed; top: 8px; left: 12px; z-index: 10001; cursor: pointer;">
+  <div style="width: 25px; height: 3px; background:linear-gradient(to right, cyan,red); margin: 4px 0;border-radius:4px"></div>
+  <div style="width: 25px; height: 3px; background:linear-gradient(to right, cyan,red); margin: 4px 0; border-radius:4px"></div>
+  <div style="width: 25px; height: 3px; background:linear-gradient(to right, cyan,red); margin: 4px 0; border-radius:4px"></div>
+</div>
+
+<!-- Slide-in sidebar (hidden by default) -->
+<div id="sideMenu" style="
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #182848, #4b6cb7);
+  color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+  z-index: 10000;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+">
+  <h3 style="margin-top: 0; position:fixed; left:50px; top:0;"> Menu</h3>
+  <a href="index.html" style="margin: 10px 0; color: white; text-decoration: none; position:fixed; top:40px;">🏠 Home (refresh)</a>
+  <a href="Help1.html" style="margin: 10px 0; color: white; text-decoration: none; position:fixed; top:90px;">❓ Help</a>
+  <a href="Contact.html" target="_blank" style="margin: 10px 0; color: white; text-decoration: none;position:fixed; top:140px;">💬 Contact</a>
+  <a href="https://t.me/instafollowers029" target="_blank" style="margin: 10px 0; color: white; text-decoration: none;position:fixed; top:190px;">📁 Proof</a>
+</div>
+  <div style="text-align:center; margin: 20px auto;">
+    <p style="color:red; font-size: 18px; ">Ready to boost your presence? CONTACT US<strong style="color:black; font-size:9px;">(through bot even if you restricted by Telegram)</strong>:</p>
+    <a href="https://t.me/Mohitbadmashbot"
+   style=" background: linear-gradient(to right, blue,red); color: white; padding: 5px 10px; border-radius: 8px; font-size: 16px; font-weight: 500; text-decoration: none; font-family: 'Poppins', sans-serif; cursor: pointer;" >@Mohitbehelgaming</a>
+  </div>
+ <a href="Help1.html"
+   style="position: fixed; top: 90vh; right: 10px; z-index: 9999; background: linear-gradient(to right, #ff416c, #007cf0); color: white; padding: 10px 20px; border-radius: 8px; font-size: 16px; font-weight: 500; text-decoration: none; font-family: 'Poppins', sans-serif; cursor: pointer;">
+   Help
+</a>
+  <a href="https://t.me/Mohitbehelgaming"
+   style="position: fixed; top: 84vh; right: 10px; z-index: 9999; background: linear-gradient(to right, #ff416c, #007cf0); color: white; padding: 5px 10px; border-radius: 8px; font-size: 16px; font-weight: 500; text-decoration: none; font-family: 'Poppins', sans-serif; cursor: pointer;">
+   DM
+  </a>
+  <section>
+    <div class="card">
+      <p style="font-size: 20px;">How It Works</p>
+      <p>Getting started is simple. First, we deposit funds into our panel account. Then we browse through a wide variety of services tailored for each platform — from boosting Instagram followers to increasing YouTube watch hours, we’ve got it all. Once you’ve chosen the right service, just confirm your order and we’ll handle the rest.</p>
+     <h2 style="color:red;">Daily updates slot</h2>
+<div id="deal-slot" style="margin-top: 20px; padding: 15px; border-left: 5px solid #ff416c; background: rgb(200,240,255); color: #333; border-radius: 8px; font-size: 16px; font-weight: 500;">
+  Loading today's update...
+</div>
+      <p>Every service includes a detailed description and an estimated delivery of work time so you know exactly what to expect. Our team ensures timely delivery and quality you can trust.</p>
+    </div>
+
+    <div class="card">
+      <p style="font-size:20px;">All-in-One Platform</p>
+      <p><a href="https://t.me/Mohitbehelgaming" target="_blank" style="font-size: 16px;">We</a> proudly support all major platforms:</p>
+      <ul>
+        <li>Instagram (75 Followers 20<strong style="color: blue;">rs</strong>, 4k Likes 30<strong style="color: blue;">rs</strong> , 10k Views 15<strong style="color: blue;">rs</strong>, Poll Votes)</li>
+        <li>TikTok</li>
+        <li>YouTube (100 Subscribers 20<strong style="color: blue;">rs</strong>, Likes, 1k Comments 50<strong style="color: blue;">rs</strong>,<strong style="color: blue;">4k watch hour 2.7krs</strong>)</li>
+        <li>Telegram (500 channel Subscribers 90<strong style="color: blue;">rs</strong> </li>
+        <li>WhatsApp</li>
+        <li>Discord</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>And many more!</li>
+      </ul>
+      <p><p style="color:blue;">BULK ORDER HAVE DISCOUNT</p> No matter where your audience is, we help you reach them efficiently and affordably.</p>
+    </div>
+
+    <div class="card">
+      <h2>Why Choose <a href="https://t.me/Mohitbehelgaming" target="_blank" style="font-size: 26px;">Us</a></h2>
+      <p>We stand out because we offer:</p>
+      <ul>
+        <li>✅ Best price in the market</li>
+        <li>✅ Trusted by real clients with verified results</li>
+        <li>✅ Full transparency with descriptions and delivery timelines</li>
+        <li>✅ A wide range of services for all types of creators and influencers</li>
+        <li>✅ Demo available for just ₹25 (100 followers or 10K views)</li>
+      </ul>
+      <p>Our services are proven, reliable, and always up to date with current trends and algorithms.</p>
+    </div>
+
+    <div class="card contact">
+      <h2>Get Started</h2>
+      <p>Check our proof of delivery and ongoing results in our Telegram proof channel.</p>
+      <a href="https://t.me/instafollowers029" target="_blank">View Proof Channel</a>
+
+      <p>Ready to boost your presence? DM us directly for orders and queries:</p>
+      <a href="https://t.me/Mohitbehelgaming" target="_blank">@Mohitbehelgaming</a>
+    </div>
+  </section>
+    <div id="loader" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;z-index:9999;display:flex;justify-content:center;align-items:center;">
+  <div style="border:6px solid #f3f3f3;border-top:6px solid #3498db;border-radius:50%;width:50px;height:50px;animation:spin 1s linear infinite;"></div>
+    </div>
+
+  <footer>
+    &copy; 2025 Mohit Bhai Panel. All rights reserved.
+  </footer>
+
+  <script>
+    const slides = document.querySelectorAll(".header-slide");
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active", "left", "right");
+        if (i === index) {
+          slide.classList.add("active");
+        } else {
+          slide.classList.add(i < index ? "left" : "right");
+        }
+      });
+    }
+
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }, 5000);
+  </script>
+  <script>
+  // Inject keyframes manually since there's no <style>
+  const style = document.createElement('style');
+  style.innerHTML = `@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}`;
+  document.head.appendChild(style);
+
+  // Hide loader after 1.5 seconds
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').style.display = 'none';
+    }, 1500);
+  });
+  </script>
+  <script>
+  const BIN_ID = "686e389e41e5ad77b37aa660";
+  const API_KEY = "$2a$10$OWB0wBTxocZeAjW4yY5pyOQwnVSUr5a3bovRM9LZM5NJI8zpiT3eS";
+
+  fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+    headers: {
+      "X-Master-Key": API_KEY
+    }
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not OK");
+    }
+    return response.json();
+  })
+  .then(data => {
+    const deal = data?.record?.deal;
+    if (deal && deal.trim()) {
+      document.getElementById("deal-slot").innerText = deal;
+    } else {
+      document.getElementById("deal-slot").innerText = "⚠️ No update today.";
+    }
+  })
+  .catch(error => {
+    console.error("Fetch error:", error);
+    document.getElementById("deal-slot").innerText = "⚠️ Unable to load today's deal.";
+  });
+  </script>
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    const isVisible = menu.style.transform === "translateX(0%)";
+    menu.style.transform = isVisible ? "translateX(-100%)" : "translateX(0%)";
+  }
+  </script>
+</body>
+</html>
